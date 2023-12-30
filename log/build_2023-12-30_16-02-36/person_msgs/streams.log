@@ -1,0 +1,152 @@
+[0.524s] Invoking command in '/home/nishi/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/nishi/ros2_ws/build/person_msgs -- -j8 -l8
+[0.578s] [  2%] Built target person_msgs__cpp
+[0.578s] [ 12%] Built target person_msgs__rosidl_generator_c
+[0.607s] [ 23%] Built target person_msgs__rosidl_typesupport_introspection_c
+[0.607s] [ 33%] Built target person_msgs__rosidl_typesupport_c
+[0.607s] [ 43%] Built target person_msgs__rosidl_typesupport_cpp
+[0.609s] [ 53%] Built target person_msgs__rosidl_typesupport_introspection_cpp
+[0.613s] [ 64%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp
+[0.643s] [ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_c
+[0.672s] [ 74%] Built target person_msgs
+[0.701s] [ 76%] Built target person_msgs__py
+[0.746s] [ 84%] Built target person_msgs__python
+[0.795s] [ 89%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.796s] [ 94%] Built target person_msgs__rosidl_typesupport_c__pyext
+[0.797s] [100%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext
+[0.816s] Invoked command in '/home/nishi/ros2_ws/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/nishi/ros2_ws/build/person_msgs -- -j8 -l8
+[0.964s] Invoking command in '/home/nishi/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/nishi/ros2_ws/build/person_msgs
+[0.975s] -- Install configuration: ""
+[0.976s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs
+[0.976s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.976s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.977s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/query.h
+[0.977s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.977s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.c
+[0.977s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.h
+[0.978s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.h
+[0.978s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.h
+[0.978s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.979s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h
+[0.979s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.980s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.980s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c
+[0.980s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h
+[0.980s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h
+[0.981s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h
+[0.981s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh
+[0.981s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv
+[0.982s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so
+[0.982s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.982s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.983s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.983s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_c.h
+[0.983s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.984s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/dds_fastrtps
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_cpp.hpp
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.985s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.c
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.986s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/query.hpp
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__builder.hpp
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.hpp
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__traits.hpp
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.hpp
+[0.987s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.cpp
+[0.988s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_cpp.hpp
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv
+[0.989s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py
+[1.054s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query_s.c
+[1.055s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query.py
+[1.056s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/__init__.py
+[1.056s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.056s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.057s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.058s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so
+[1.059s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl
+[1.060s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.idl
+[1.060s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg
+[1.060s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.srv
+[1.061s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Request.msg
+[1.061s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Response.msg
+[1.061s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs
+[1.061s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs
+[1.062s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh
+[1.062s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv
+[1.062s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/path.sh
+[1.063s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/environment/path.dsv
+[1.063s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/local_setup.bash
+[1.063s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/local_setup.sh
+[1.064s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/local_setup.zsh
+[1.064s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/local_setup.dsv
+[1.064s] -- Installing: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/package.dsv
+[1.065s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/ament_index/resource_index/packages/person_msgs
+[1.065s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport.cmake
+[1.065s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.065s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.065s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cppExport.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake-extras.cmake
+[1.066s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.067s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.067s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.067s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.067s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.067s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.068s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake
+[1.070s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake
+[1.071s] -- Up-to-date: /home/nishi/ros2_ws/install/person_msgs/share/person_msgs/package.xml
+[1.077s] Invoked command in '/home/nishi/ros2_ws/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/nishi/ros2_ws/build/person_msgs
