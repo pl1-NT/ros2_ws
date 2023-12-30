@@ -1,0 +1,20 @@
+[0.490s] Invoking command in '/home/nishi/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/nishi/ros2_ws/build/person_msgs -- -j8 -l8
+[0.543s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.573s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.573s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.817s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.823s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.831s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.119s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.173s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[8.174s]   rosidl_generate_interfaces() the passed file 'srv/Query.srv' doesn't exist
+[8.174s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[8.174s]   '/home/nishi/ros2_ws/src/person_msgs'
+[8.174s] Call Stack (most recent call first):
+[8.174s]   CMakeLists.txt:24 (rosidl_generate_interfaces)
+[8.174s] 
+[8.174s] 
+[8.175s] -- Configuring incomplete, errors occurred!
+[8.175s] See also "/home/nishi/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[8.188s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[8.194s] Invoked command in '/home/nishi/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishi/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/nishi/ros2_ws/build/person_msgs -- -j8 -l8
