@@ -2,5 +2,9 @@ msg/Person.idl
 msg/Person.msg
 srv/Query.idl
 srv/Query.srv
+srv/Query2.idl
+srv/Query2.srv
+srv/Query2_Request.msg
+srv/Query2_Response.msg
 srv/Query_Request.msg
 srv/Query_Response.msg

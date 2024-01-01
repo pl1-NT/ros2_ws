@@ -1,18 +1,37 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from person_msgs.srv import Query2
+
+def cb(request,response):
+    if request.birthmonth == 1:
+        response.birthstone = "garnett"
+    elif request.birthmonth == 2:
+        response.birthstone = "amethyst"
+    elif request.birthmonth == 3:
+        response.birthstone = "aquamarine"
+    elif request.birthmonth == 4:
+        response.birthstone = "diamond"
+    elif request.birthmonth == 5:
+        response.birthstone = "emerald"
+    elif request.birthmonth == 6:
+        response.birthstone = "moonstone"
+    elif request.birthmonth == 7:
+        response.birthstone = "ruby"
+    elif request.birthmonth == 8:
+        response.birthstone = "peridot"
+    elif request.birthmonth == 9:
+        response.birthstone = "sapphire"
+    elif request.birthmonth == 10:
+        response.birthstone = "tourmaline"
+    elif request.birthmonth == 11:
+        response.birthstone = "topaz"
+    elif request.birthmonth == 12:
+        response.birthstone = "tanzanite"
+    else :
+        response.birthstone = "入力エラー"
+    return response
 
 rclpy.init()
 node = Node("talker")
-pub = node.create_publisher(Int16, "countup", 10)
-n = 0
-
-def cb():
-    global n
-    msg = Int16()
-    msg.data = n
-    pub.publish(msg)
-    n += 1
-
-node.create_timer(0.5, cb)
+srv = node.create_service(Query2, "query2", cb)
 rclpy.spin(node)

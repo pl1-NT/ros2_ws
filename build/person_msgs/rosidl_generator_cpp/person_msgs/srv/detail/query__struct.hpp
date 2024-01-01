@@ -37,30 +37,30 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
+      this->birthmonth = 0;
     }
   }
 
   explicit Query_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
+      this->birthmonth = 0;
     }
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _name_type name;
+  using _birthmonth_type =
+    uint8_t;
+  _birthmonth_type birthmonth;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  Type & set__birthmonth(
+    const uint8_t & _arg)
   {
-    this->name = _arg;
+    this->birthmonth = _arg;
     return *this;
   }
 
@@ -106,7 +106,7 @@ struct Query_Request_
   // comparison operators
   bool operator==(const Query_Request_ & other) const
   {
-    if (this->name != other.name) {
+    if (this->birthmonth != other.birthmonth) {
       return false;
     }
     return true;
@@ -151,30 +151,30 @@ struct Query_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->age = 0;
+      this->birthstone = "";
     }
   }
 
   explicit Query_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : birthstone(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->age = 0;
+      this->birthstone = "";
     }
   }
 
   // field types and members
-  using _age_type =
-    uint8_t;
-  _age_type age;
+  using _birthstone_type =
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+  _birthstone_type birthstone;
 
   // setters for named parameter idiom
-  Type & set__age(
-    const uint8_t & _arg)
+  Type & set__birthstone(
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
-    this->age = _arg;
+    this->birthstone = _arg;
     return *this;
   }
 
@@ -220,7 +220,7 @@ struct Query_Response_
   // comparison operators
   bool operator==(const Query_Response_ & other) const
   {
-    if (this->age != other.age) {
+    if (this->birthstone != other.birthstone) {
       return false;
     }
     return true;

@@ -67,17 +67,24 @@ rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesup
 rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h: rosidl_adapter/person_msgs/msg/Person.idl
 rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h: rosidl_adapter/person_msgs/srv/Query.idl
+rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h: rosidl_adapter/person_msgs/srv/Query2.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nishi/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/nishi/ros2_ws/build/person_msgs/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c
 
 rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c
+
+rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c
 
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c
@@ -105,23 +112,38 @@ CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesuppor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nishi/ros2_ws/build/person_msgs/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c -o CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.s
 
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o: rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nishi/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o   -c /home/nishi/ros2_ws/build/person_msgs/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c
+
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nishi/ros2_ws/build/person_msgs/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c > CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.i
+
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nishi/ros2_ws/build/person_msgs/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c -o CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.s
+
 # Object files for target person_msgs__rosidl_typesupport_introspection_c
 person_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o" \
-"CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.o"
+"CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.o" \
+"CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o"
 
 # External object files for target person_msgs__rosidl_typesupport_introspection_c
 person_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libperson_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o
 libperson_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.o
+libperson_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o
 libperson_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libperson_msgs__rosidl_typesupport_introspection_c.so: libperson_msgs__rosidl_generator_c.so
 libperson_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
 libperson_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libperson_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libperson_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nishi/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libperson_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nishi/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libperson_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,8 +157,10 @@ CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__rosidl_typesupport_introspection_c.h
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c
 CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c
+CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c
 	cd /home/nishi/ros2_ws/build/person_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nishi/ros2_ws/src/person_msgs /home/nishi/ros2_ws/src/person_msgs /home/nishi/ros2_ws/build/person_msgs /home/nishi/ros2_ws/build/person_msgs /home/nishi/ros2_ws/build/person_msgs/CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/depend
 

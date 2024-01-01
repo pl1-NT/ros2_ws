@@ -20,15 +20,15 @@ namespace srv
 namespace builder
 {
 
-class Init_Query_Request_name
+class Init_Query_Request_birthmonth
 {
 public:
-  Init_Query_Request_name()
+  Init_Query_Request_birthmonth()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::person_msgs::srv::Query_Request name(::person_msgs::srv::Query_Request::_name_type arg)
+  ::person_msgs::srv::Query_Request birthmonth(::person_msgs::srv::Query_Request::_birthmonth_type arg)
   {
-    msg_.name = std::move(arg);
+    msg_.birthmonth = std::move(arg);
     return std::move(msg_);
   }
 
@@ -47,7 +47,7 @@ template<>
 inline
 auto build<::person_msgs::srv::Query_Request>()
 {
-  return person_msgs::srv::builder::Init_Query_Request_name();
+  return person_msgs::srv::builder::Init_Query_Request_birthmonth();
 }
 
 }  // namespace person_msgs
@@ -62,15 +62,15 @@ namespace srv
 namespace builder
 {
 
-class Init_Query_Response_age
+class Init_Query_Response_birthstone
 {
 public:
-  Init_Query_Response_age()
+  Init_Query_Response_birthstone()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::person_msgs::srv::Query_Response age(::person_msgs::srv::Query_Response::_age_type arg)
+  ::person_msgs::srv::Query_Response birthstone(::person_msgs::srv::Query_Response::_birthstone_type arg)
   {
-    msg_.age = std::move(arg);
+    msg_.birthstone = std::move(arg);
     return std::move(msg_);
   }
 
@@ -89,7 +89,7 @@ template<>
 inline
 auto build<::person_msgs::srv::Query_Response>()
 {
-  return person_msgs::srv::builder::Init_Query_Response_age();
+  return person_msgs::srv::builder::Init_Query_Response_birthstone();
 }
 
 }  // namespace person_msgs

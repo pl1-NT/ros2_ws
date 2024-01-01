@@ -32,8 +32,8 @@ cdr_serialize(
   const person_msgs::srv::Query_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
+  // Member: birthmonth
+  cdr << ros_message.birthmonth;
   return true;
 }
 
@@ -43,8 +43,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   person_msgs::srv::Query_Request & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
+  // Member: birthmonth
+  cdr >> ros_message.birthmonth;
 
   return true;
 }
@@ -62,10 +62,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
+  // Member: birthmonth
+  {
+    size_t item_size = sizeof(ros_message.birthmonth);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -85,16 +87,11 @@ max_serialized_size_Query_Request(
   (void)full_bounded;
 
 
-  // Member: name
+  // Member: birthmonth
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;
@@ -219,8 +216,8 @@ cdr_serialize(
   const person_msgs::srv::Query_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: age
-  cdr << ros_message.age;
+  // Member: birthstone
+  cdr << ros_message.birthstone;
   return true;
 }
 
@@ -230,8 +227,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   person_msgs::srv::Query_Response & ros_message)
 {
-  // Member: age
-  cdr >> ros_message.age;
+  // Member: birthstone
+  cdr >> ros_message.birthstone;
 
   return true;
 }
@@ -249,12 +246,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: age
-  {
-    size_t item_size = sizeof(ros_message.age);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // Member: birthstone
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.birthstone.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -274,11 +269,16 @@ max_serialized_size_Query_Response(
   (void)full_bounded;
 
 
-  // Member: age
+  // Member: birthstone
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;

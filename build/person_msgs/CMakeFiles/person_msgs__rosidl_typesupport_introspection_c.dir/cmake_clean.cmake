@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o"
+  "CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c.o"
   "CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.o"
   "libperson_msgs__rosidl_typesupport_introspection_c.pdb"
   "libperson_msgs__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c"
+  "rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/person_msgs/srv/detail/query2__type_support.c"
   "rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c"
 )

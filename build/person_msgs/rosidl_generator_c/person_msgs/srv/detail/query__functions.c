@@ -10,21 +10,13 @@
 
 #include "rcutils/allocator.h"
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 person_msgs__srv__Query_Request__init(person_msgs__srv__Query_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
-    person_msgs__srv__Query_Request__fini(msg);
-    return false;
-  }
+  // birthmonth
   return true;
 }
 
@@ -34,8 +26,7 @@ person_msgs__srv__Query_Request__fini(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
+  // birthmonth
 }
 
 bool
@@ -44,10 +35,8 @@ person_msgs__srv__Query_Request__are_equal(const person_msgs__srv__Query_Request
   if (!lhs || !rhs) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
-  {
+  // birthmonth
+  if (lhs->birthmonth != rhs->birthmonth) {
     return false;
   }
   return true;
@@ -61,12 +50,8 @@ person_msgs__srv__Query_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
-  {
-    return false;
-  }
+  // birthmonth
+  output->birthmonth = input->birthmonth;
   return true;
 }
 
@@ -245,13 +230,21 @@ person_msgs__srv__Query_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `birthstone`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 person_msgs__srv__Query_Response__init(person_msgs__srv__Query_Response * msg)
 {
   if (!msg) {
     return false;
   }
-  // age
+  // birthstone
+  if (!rosidl_runtime_c__String__init(&msg->birthstone)) {
+    person_msgs__srv__Query_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -261,7 +254,8 @@ person_msgs__srv__Query_Response__fini(person_msgs__srv__Query_Response * msg)
   if (!msg) {
     return;
   }
-  // age
+  // birthstone
+  rosidl_runtime_c__String__fini(&msg->birthstone);
 }
 
 bool
@@ -270,8 +264,10 @@ person_msgs__srv__Query_Response__are_equal(const person_msgs__srv__Query_Respon
   if (!lhs || !rhs) {
     return false;
   }
-  // age
-  if (lhs->age != rhs->age) {
+  // birthstone
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->birthstone), &(rhs->birthstone)))
+  {
     return false;
   }
   return true;
@@ -285,8 +281,12 @@ person_msgs__srv__Query_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // age
-  output->age = input->age;
+  // birthstone
+  if (!rosidl_runtime_c__String__copy(
+      &(input->birthstone), &(output->birthstone)))
+  {
+    return false;
+  }
   return true;
 }
 

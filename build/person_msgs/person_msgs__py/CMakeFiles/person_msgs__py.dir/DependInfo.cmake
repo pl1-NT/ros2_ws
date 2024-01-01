@@ -12,6 +12,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/msg/_person_s.c" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/srv/__init__.py" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/srv/_query.py" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/srv/_query2.py" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/srv/_query2_s.c" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/srv/_query_s.c" "/home/nishi/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 

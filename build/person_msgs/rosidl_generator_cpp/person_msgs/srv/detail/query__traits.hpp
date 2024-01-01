@@ -27,11 +27,11 @@ inline const char * name<person_msgs::srv::Query_Request>()
 
 template<>
 struct has_fixed_size<person_msgs::srv::Query_Request>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<person_msgs::srv::Query_Request>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<person_msgs::srv::Query_Request>
@@ -56,11 +56,11 @@ inline const char * name<person_msgs::srv::Query_Response>()
 
 template<>
 struct has_fixed_size<person_msgs::srv::Query_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<person_msgs::srv::Query_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<person_msgs::srv::Query_Response>

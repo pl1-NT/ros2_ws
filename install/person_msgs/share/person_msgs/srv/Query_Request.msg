@@ -1,1 +1,1 @@
-string name
+uint8 birthmonth

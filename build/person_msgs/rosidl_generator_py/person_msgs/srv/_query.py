@@ -53,22 +53,22 @@ class Query_Request(metaclass=Metaclass_Query_Request):
     """Message class 'Query_Request'."""
 
     __slots__ = [
-        '_name',
+        '_birthmonth',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
+        'birthmonth': 'uint8',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
+        self.birthmonth = kwargs.get('birthmonth', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -99,7 +99,7 @@ class Query_Request(metaclass=Metaclass_Query_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
+        if self.birthmonth != other.birthmonth:
             return False
         return True
 
@@ -109,17 +109,19 @@ class Query_Request(metaclass=Metaclass_Query_Request):
         return copy(cls._fields_and_field_types)
 
     @property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def birthmonth(self):
+        """Message field 'birthmonth'."""
+        return self._birthmonth
 
-    @name.setter
-    def name(self, value):
+    @birthmonth.setter
+    def birthmonth(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
+                isinstance(value, int), \
+                "The 'birthmonth' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'birthmonth' field must be an unsigned integer in [0, 255]"
+        self._birthmonth = value
 
 
 # Import statements for member types
@@ -173,22 +175,22 @@ class Query_Response(metaclass=Metaclass_Query_Response):
     """Message class 'Query_Response'."""
 
     __slots__ = [
-        '_age',
+        '_birthstone',
     ]
 
     _fields_and_field_types = {
-        'age': 'uint8',
+        'birthstone': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.age = kwargs.get('age', int())
+        self.birthstone = kwargs.get('birthstone', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -219,7 +221,7 @@ class Query_Response(metaclass=Metaclass_Query_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.age != other.age:
+        if self.birthstone != other.birthstone:
             return False
         return True
 
@@ -229,19 +231,17 @@ class Query_Response(metaclass=Metaclass_Query_Response):
         return copy(cls._fields_and_field_types)
 
     @property
-    def age(self):
-        """Message field 'age'."""
-        return self._age
+    def birthstone(self):
+        """Message field 'birthstone'."""
+        return self._birthstone
 
-    @age.setter
-    def age(self, value):
+    @birthstone.setter
+    def birthstone(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'age' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'age' field must be an unsigned integer in [0, 255]"
-        self._age = value
+                isinstance(value, str), \
+                "The 'birthstone' field must be of type 'str'"
+        self._birthstone = value
 
 
 class Metaclass_Query(type):

@@ -1,2 +1,2 @@
 
-uint8 age
+string birthstone

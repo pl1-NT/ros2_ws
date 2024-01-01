@@ -6,10 +6,10 @@
 module person_msgs {
   module srv {
     struct Query_Request {
-      string name;
+      uint8 birthmonth;
     };
     struct Query_Response {
-      uint8 age;
+      string birthstone;
     };
   };
 };

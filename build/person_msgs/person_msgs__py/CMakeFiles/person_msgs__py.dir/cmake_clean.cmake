@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/person_msgs/msg/_person_s.c"
   "../rosidl_generator_py/person_msgs/srv/__init__.py"
   "../rosidl_generator_py/person_msgs/srv/_query.py"
+  "../rosidl_generator_py/person_msgs/srv/_query2.py"
+  "../rosidl_generator_py/person_msgs/srv/_query2_s.c"
   "../rosidl_generator_py/person_msgs/srv/_query_s.c"
   "CMakeFiles/person_msgs__py"
 )

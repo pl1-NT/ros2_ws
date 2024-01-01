@@ -34,8 +34,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // name
-#include "rosidl_runtime_c/string_functions.h"  // name
 
 // forward declare type support functions
 
@@ -51,18 +49,9 @@ static bool _Query_Request__cdr_serialize(
     return false;
   }
   const _Query_Request__ros_msg_type * ros_message = static_cast<const _Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: birthmonth
   {
-    const rosidl_runtime_c__String * str = &ros_message->name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->birthmonth;
   }
 
   return true;
@@ -77,20 +66,9 @@ static bool _Query_Request__cdr_deserialize(
     return false;
   }
   _Query_Request__ros_msg_type * ros_message = static_cast<_Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: birthmonth
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->name.data) {
-      rosidl_runtime_c__String__init(&ros_message->name);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->name,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'name'\n");
-      return false;
-    }
+    cdr >> ros_message->birthmonth;
   }
 
   return true;
@@ -110,10 +88,12 @@ size_t get_serialized_size_person_msgs__srv__Query_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
+  // field.name birthmonth
+  {
+    size_t item_size = sizeof(ros_message->birthmonth);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -138,16 +118,11 @@ size_t max_serialized_size_person_msgs__srv__Query_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: name
+  // member: birthmonth
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;
@@ -224,6 +199,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/string.h"  // birthstone
+#include "rosidl_runtime_c/string_functions.h"  // birthstone
 
 // forward declare type support functions
 
@@ -239,9 +216,18 @@ static bool _Query_Response__cdr_serialize(
     return false;
   }
   const _Query_Response__ros_msg_type * ros_message = static_cast<const _Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: age
+  // Field name: birthstone
   {
-    cdr << ros_message->age;
+    const rosidl_runtime_c__String * str = &ros_message->birthstone;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -256,9 +242,20 @@ static bool _Query_Response__cdr_deserialize(
     return false;
   }
   _Query_Response__ros_msg_type * ros_message = static_cast<_Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: age
+  // Field name: birthstone
   {
-    cdr >> ros_message->age;
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->birthstone.data) {
+      rosidl_runtime_c__String__init(&ros_message->birthstone);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->birthstone,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'birthstone'\n");
+      return false;
+    }
   }
 
   return true;
@@ -278,12 +275,10 @@ size_t get_serialized_size_person_msgs__srv__Query_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name age
-  {
-    size_t item_size = sizeof(ros_message->age);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name birthstone
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->birthstone.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -308,11 +303,16 @@ size_t max_serialized_size_person_msgs__srv__Query_Response(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: age
+  // member: birthstone
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;
